@@ -117,40 +117,40 @@
             config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
             songs: [
                 {
-                    name:'Hội những người thất tình',
-                    singer: 'Thảo Mạnh',
-                    path: './assets/music/vietsub_hoi_nhung_nguoi_that_tinh_thao_manh_3936713867280287912.mp3',
-                    image: './assets/img/Yen.png'
+                    name:'Ok Anh Đúng',
+                    singer: 'Orange ft HIEUTHUHAI',
+                    path: './assets/music/orange_ft_hieuthuhai_ok_anh_dung_chapt_2_lyrical_mv_5069552122313062800.mp3',
+                    image: './assets/img/voTan.jpg'
+                },
+                {
+                    name:'Mượn rượu tỏ tình',
+                    singer: 'BigDaddy x Emily',
+                    path: './assets/music/bigdaddy_x_emily_muon_ruou_to_tinh_official_m_v_303406714030861356.mp3',
+                    image: './assets/img/maxresdefault.jpg'
                 },
                 {
                     name:'Tình yêu ngủ quên',
                     singer: 'Hoàng Tôn',
                     path: './assets/music/hoang_ton_tinh_yeu_ngu_quen_ft_lyhan_7984132458169811220.mp3',
-                    image: './assets/img/Yen.png'
+                    image: './assets/img/zy.png'
                 },
                 {
-                    name:'Việt Nam ơi',
-                    singer: 'Minh Beta',
-                    path: './assets/music/viet_nam_oi_danh_bay_covid_minh_beta_sendo_-6279093897824856291.mp3',
-                    image: './assets/img/Yen.png'
+                    name:'2 AM',
+                    singer: 'JustaTee x BigDaddy',
+                    path: './assets/music/X2Download.com - Audio _ 2 A.M _ JustaTee x BigDaddy (128 kbps) (1).mp3',
+                    image: './assets/img/codoi.jpg'
                 },
                 {
-                    name:'Tự hào hát mãi Việt Nam',
-                    singer: 'Vtv6',
-                    path: './assets/music/tu_hao_hat_mai_len_viet_nam_oi_vie_t_nam_oi_u23_vie_t_nam_2018_vtv6_-8051702580049951558.mp3',
-                    image: './assets/img/Yen.png'
+                    name:'Giữa Đại Lộ Đông Tây',
+                    singer: 'Uyên Linh',
+                    path: './assets/music/X2Download.com - XHTDRLX _ Giữa Đại Lộ Đông Tây - Uyên Linh St. Hứa Kim Tuyền LIVE tại XUÂN HẠ THU ĐÔNG RỒI LẠI XUÂN (128 kbps).mp3',
+                    image: './assets/img/DaiLoDongTay.jpg'
                 },
                 {
-                    name:'Telescope',
-                    singer: 'Transviolet',
-                    path: './assets/music/telescope_tim_legend_ft_transviolet_lyrics_vietsub_-4882174524150320049.mp3',
-                    image: './assets/img/Yen.png'
-                },
-                {
-                    name:'Money',
-                    singer: 'Lisa',
-                    path: './assets/music/lisa_money_lyrics_-6776101871801152779.mp3',
-                    image: './assets/img/Yen.png'
+                    name:'Mặt trời của em',
+                    singer: 'Phương Ly',
+                    path: './assets/music/mat_troi_cua_em_official_mv_phuong_ly_ft_justatee_bg84CHMByoK-gucZHGRK (1).mp3',
+                    image: './assets/img/ab67616d0000b273851646f69bd8b1839644b2b7.jfif'
                 },
                 {
                     name:'Lớp 13',
@@ -162,7 +162,13 @@
                     name:'At my Worst',
                     singer: 'Pink sweat ',
                     path: './assets/music/pink_sweat_at_my_worst_lyrics_-7799078635491711887.mp3',
-                    image: './assets/img/Yen.png'
+                    image: './assets/img/HungHCMUS.png'
+                },
+                {
+                    name:'Cơn Mưa Tình Yêu',
+                    singer: 'Hà Anh Tuấn x Phương Linh',
+                    path: './assets/music/con_mua_tinh_yeu_ha_anh_tuan_phuong_linh_mv_lyrics_hd_-3983609386023608000.mp3',
+                    image: './assets/img/artworks-q2ziManGG0dCLEhl-fIZpng-t500x500.jpg'
                 },
             ],
             setConfig: function(key, value) {
@@ -321,8 +327,8 @@
                         
                         _this.currentIndex = Number(songNode.dataset.index);
                         _this.loadCurrentSong();
-                        _this.render();
                         audio.play();
+                        _this.render();
                     }
                 }
             },
